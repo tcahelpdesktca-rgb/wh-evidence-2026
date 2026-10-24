@@ -26,5 +26,16 @@ if your machine doesn't already have them).
 | `05-page-text` | Titles, captions and axis settings vs. the data |
 | `06-render` | Headless browser: no JS errors, KPI text, every chart plots every point |
 
+## Other ways to run it
+
+| Command | What it proves |
+|---|---|
+| `npm run test:control` | Builds a dashboard that is correct by construction (synthetic timestamps run through the page's own stated method) and runs the suite on it. Must be 0 failures; if not, a test is wrong, not the data. |
+| `npm run test:mutants` | Plants 24 known defects in copies of the page (edited KPI, edited cell, broken chart, ...) and confirms each one turns at least one test red. |
+| `npm run cross-check` | Independent Python recomputation of the disputed figures. Writes `reports/day_by_day.csv`, with one row per day and a flags column, for use in a spreadsheet. |
+| `DASHBOARD=path/to/copy.html npm test` | Same suite against any other copy of the page. |
+| `TZ=Asia/Tokyo BROWSER_TZ=Asia/Tokyo npm test` | Timezone independence (results must not change). |
+| `BROWSER_CHANNEL=chromium npm test` | Full Chromium build instead of the headless shell. |
+
 A failing test means the page contradicts itself or overstates something. It
 does not mean the test is broken. The failure message lists the exact days involved.

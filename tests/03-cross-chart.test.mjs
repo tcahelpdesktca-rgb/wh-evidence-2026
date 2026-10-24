@@ -176,17 +176,22 @@ describe('gantt vs daily series', () => {
     assert.deepEqual(bad, [], `${bad.length} days disagree [date, daily, gantt]: ${show(bad)}`);
   });
 
-  it('first gantt session starts at the day\'s first event (to 2 min)', () => {
+  // A row that starts at 00:00 is the tail of a session carried over from the night
+  // before, and a row that ends at 24:00 carries on into the next day; neither has
+  // to line up with an event time.
+  it('first gantt session starts at the day\'s first event (to 2 min), unless carried over from midnight', () => {
     const bad = rows
       .map((r) => [r.date, r.first, (gByDate[r.date] || [])[0]])
+      .filter(([, , g]) => !g || g.start_h > 1e-3)
       .filter(([, first, g]) => !g || Math.abs(g.start_h - clockToHours(first)) > 2 / 60)
       .map(([d, first, g]) => [d, first, g && g.start_clock]);
     assert.deepEqual(bad, [], `${bad.length} days disagree [date, first_event, first gantt start]: ${show(bad)}`);
   });
 
-  it('last gantt session ends at the day\'s last event (to 2 min)', () => {
+  it('last gantt session ends at the day\'s last event (to 2 min), unless it runs on past midnight', () => {
     const bad = rows
       .map((r) => [r.date, r.last, (gByDate[r.date] || []).at(-1)])
+      .filter(([, , g]) => !g || g.start_h + g.duration_h < 23.999)
       .filter(([, last, g]) => !g || Math.abs(g.start_h + g.duration_h - clockToHours(last)) > 2 / 60)
       .map(([d, last, g]) => [d, last, g && g.end_clock]);
     assert.deepEqual(bad, [], `${bad.length} days disagree [date, last_event, last gantt end]: ${show(bad)}`);

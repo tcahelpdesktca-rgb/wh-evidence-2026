@@ -1,0 +1,132 @@
+date,dow,non_business,active_hrs,gantt_hrs,first_event,last_event,off_hours_min,sessions_daily,sessions_gantt,events_heatmap,events_gantt,flags
+2026-01-02,Fri,False,2.08,2.08,05:28:30,15:21:04,68.0,6,6,83,83,
+2026-01-05,Mon,False,3.86,3.86,05:13:44,15:15:18,53.0,4,4,76,76,
+2026-01-06,Tue,False,7.29,7.96,04:00:10,20:29:57,168.0,8,7,208,208,gantt hours differ; gantt session count differs
+2026-01-07,Wed,False,22.34,22.37,00:01:33,23:58:17,681.0,2,2,410,970,over 20 hrs; cut off on chart; gantt events differ from heatmap
+2026-01-08,Thu,False,23.72,24,00:08:19,23:51:25,763.0,1,1,477,0,over 20 hrs; cut off on chart; gantt hours differ; gantt events differ from heatmap
+2026-01-09,Fri,False,14.12,14.88,00:01:26,20:48:58,497.0,4,3,272,1156,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-01-10,Sat,True,0.0,0.0,00:48:39,00:48:40,0.0,1,1,3,3,non-business day under 15 min
+2026-01-12,Mon,False,8.66,8.69,06:50:13,23:58:10,330.0,4,4,109,822,gantt events differ from heatmap
+2026-01-13,Tue,False,23.8,24,00:08:11,23:56:19,768.0,1,1,380,0,over 20 hrs; cut off on chart; gantt hours differ; gantt events differ from heatmap
+2026-01-14,Wed,False,19.38,19.49,00:06:20,23:59:37,515.0,4,4,340,797,gantt hours differ; gantt events differ from heatmap
+2026-01-15,Thu,False,16.43,16.66,00:13:12,23:59:44,521.0,6,6,390,852,gantt hours differ; gantt events differ from heatmap
+2026-01-16,Fri,False,22.48,22.57,00:05:35,22:34:06,688.0,1,1,460,735,over 20 hrs; cut off on chart; gantt hours differ; gantt events differ from heatmap
+2026-01-17,Sat,True,0.25,0.25,01:40:04,21:09:05,15.0,3,3,5,5,
+2026-01-18,Sun,True,1.9,1.9,17:59:06,20:56:23,114.0,2,2,6,6,
+2026-01-19,Mon,True,0.79,0.79,17:51:44,18:39:14,48.0,1,1,4,4,
+2026-01-20,Tue,False,5.7,7.13,04:24:33,23:27:46,228.0,10,8,124,124,gantt hours differ; gantt session count differs
+2026-01-21,Wed,False,8.76,11.6,01:13:19,22:24:55,281.0,13,9,226,226,gantt hours differ; gantt session count differs
+2026-01-22,Thu,False,7.44,7.56,04:07:50,23:52:28,218.0,6,6,113,137,gantt hours differ; gantt events differ from heatmap
+2026-01-23,Fri,False,10.05,10.39,00:20:51,23:00:41,259.0,10,10,264,279,gantt hours differ; gantt events differ from heatmap
+2026-01-24,Sat,True,0.0,0.0,00:28:05,00:28:07,0.0,1,1,3,3,non-business day under 15 min
+2026-01-25,Sun,True,1.86,1.87,16:31:28,20:33:04,112.0,3,3,11,11,
+2026-01-26,Mon,False,7.38,7.38,03:08:54,21:13:36,248.0,8,8,103,103,
+2026-01-27,Tue,False,10.71,12.18,00:04:30,22:02:54,393.0,10,8,232,232,gantt hours differ; gantt session count differs
+2026-01-28,Wed,False,6.11,6.11,01:07:24,23:25:16,251.0,8,8,137,137,
+2026-01-29,Thu,False,10.67,10.67,00:52:15,22:04:54,301.0,5,5,254,254,
+2026-01-30,Fri,False,7.2,7.2,00:48:45,22:01:25,215.0,8,8,189,189,
+2026-01-31,Sat,True,0.0,0.0,04:11:12,04:11:12,0.0,1,1,1,1,non-business day under 15 min
+2026-02-01,Sun,True,0.53,1.99,19:40:11,21:39:38,32.0,3,1,7,7,gantt hours differ; gantt session count differs
+2026-02-02,Mon,False,14.29,15.02,00:22:21,23:56:48,402.0,6,5,704,823,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-03,Tue,False,17.18,17.33,00:04:15,23:55:03,714.0,5,5,437,1097,gantt hours differ; gantt events differ from heatmap
+2026-02-04,Wed,False,15.44,16.26,00:00:31,23:54:13,590.0,7,6,473,4047,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-05,Thu,False,23.94,24,00:00:17,23:56:43,776.0,1,1,1135,0,over 20 hrs; cut off on chart; gantt hours differ; gantt events differ from heatmap
+2026-02-06,Fri,False,23.93,24,00:01:18,23:57:06,776.0,1,1,802,0,over 20 hrs; cut off on chart; gantt hours differ; gantt events differ from heatmap
+2026-02-07,Sat,True,23.88,24,00:02:15,23:55:07,1433.0,1,1,540,0,over 20 hrs; cut off on chart; gantt hours differ; gantt events differ from heatmap
+2026-02-08,Sun,True,23.88,24,00:05:08,23:57:47,1433.0,1,1,168,0,over 20 hrs; cut off on chart; gantt hours differ; gantt events differ from heatmap
+2026-02-09,Mon,False,23.76,24,00:07:48,23:53:09,765.0,1,1,534,0,over 20 hrs; cut off on chart; gantt hours differ; gantt events differ from heatmap
+2026-02-10,Tue,False,18.61,18.66,00:03:10,22:39:26,572.0,5,5,694,4117,gantt hours differ; gantt events differ from heatmap
+2026-02-11,Wed,False,19.46,20.22,00:03:38,23:57:10,717.0,6,5,538,829,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-12,Thu,False,21.14,21.93,00:01:15,23:54:42,702.0,4,3,1054,1176,over 20 hrs; cut off on chart; gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-13,Fri,False,21.48,22.94,00:04:44,23:58:39,629.0,4,2,1129,1487,over 20 hrs; cut off on chart; gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-14,Sat,True,11.38,12.1,00:02:24,23:36:42,683.0,8,7,376,1486,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-15,Sun,True,16.64,17.66,00:43:22,23:43:19,998.0,4,3,718,1217,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-16,Mon,True,18.49,19.25,00:02:51,23:59:03,1110.0,5,4,1101,4344,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-17,Tue,False,23.97,24,00:01:47,23:59:57,778.0,1,1,1459,0,over 20 hrs; cut off on chart; gantt events differ from heatmap
+2026-02-18,Wed,False,23.98,24,00:00:10,23:59:10,779.0,1,1,1260,0,over 20 hrs; cut off on chart; gantt events differ from heatmap
+2026-02-19,Thu,False,21.12,21.13,00:00:06,23:59:42,711.0,4,4,1134,5292,over 20 hrs; cut off on chart; gantt events differ from heatmap
+2026-02-20,Fri,False,23.83,24,00:00:13,23:50:08,770.0,1,1,791,0,over 20 hrs; cut off on chart; gantt hours differ; gantt events differ from heatmap
+2026-02-21,Sat,True,23.93,24,00:00:10,23:55:40,1436.0,1,1,197,0,over 20 hrs; cut off on chart; gantt hours differ; gantt events differ from heatmap
+2026-02-22,Sun,True,17.23,17.44,00:05:43,23:52:42,1034.0,4,4,761,2130,gantt hours differ; gantt events differ from heatmap
+2026-02-23,Mon,False,21.81,22.8,00:14:11,23:57:27,691.0,3,2,792,1851,over 20 hrs; cut off on chart; gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-24,Tue,False,22.18,22.9,00:01:18,23:59:44,737.0,3,2,940,3051,over 20 hrs; cut off on chart; gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-25,Wed,False,23.85,24,00:00:13,23:51:02,771.0,1,1,1178,0,over 20 hrs; cut off on chart; gantt hours differ; gantt events differ from heatmap
+2026-02-26,Thu,False,19.3,20.7,00:00:54,23:59:47,590.0,6,4,594,2454,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-27,Fri,False,18.85,20.03,00:23:04,23:56:40,668.0,6,5,527,1587,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-02-28,Sat,True,12.89,14.11,00:28:28,21:24:08,774.0,6,5,1387,1410,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-03-01,Sun,True,2.2,2.2,02:31:39,20:14:36,132.0,6,6,41,41,
+2026-03-02,Mon,False,17.87,17.87,01:39:48,23:48:16,412.0,3,3,596,596,
+2026-03-03,Tue,False,12.71,13.43,03:07:58,23:59:53,327.0,7,6,245,245,gantt hours differ; gantt session count differs
+2026-03-04,Wed,False,9.3,9.3,01:15:07,21:55:51,330.0,7,7,260,260,
+2026-03-05,Thu,False,8.44,8.44,02:00:10,20:25:40,120.0,6,6,170,170,
+2026-03-06,Fri,False,7.06,7.06,02:00:23,23:43:10,176.0,7,7,115,115,
+2026-03-07,Sat,True,0.74,1.45,04:12:53,16:01:18,44.0,5,4,26,26,gantt hours differ; gantt session count differs
+2026-03-08,Sun,True,0.53,0.53,11:09:46,21:59:29,32.0,4,4,17,17,
+2026-03-09,Mon,False,7.16,7.16,02:47:53,21:03:02,215.0,7,7,135,135,
+2026-03-10,Tue,False,9.5,9.5,03:00:17,21:01:45,201.0,7,7,201,201,
+2026-03-11,Wed,False,7.47,7.48,00:43:37,17:10:53,189.0,7,7,160,160,
+2026-03-12,Thu,False,7.18,7.18,03:00:25,21:05:52,137.0,8,8,158,158,
+2026-03-13,Fri,False,6.23,6.23,03:00:10,20:17:35,121.0,7,7,164,164,
+2026-03-14,Sat,True,0.03,0.03,12:23:01,21:33:53,2.0,3,3,5,5,non-business day under 15 min
+2026-03-15,Sun,True,2.19,2.19,03:42:55,21:50:53,132.0,5,5,50,50,
+2026-03-16,Mon,False,6.42,7.17,03:00:28,21:50:57,139.0,9,8,155,155,gantt hours differ; gantt session count differs
+2026-03-17,Tue,False,9.99,9.99,03:00:15,22:00:01,201.0,5,5,190,190,
+2026-03-18,Wed,False,6.28,6.28,02:11:32,17:21:26,79.0,5,5,148,148,
+2026-03-19,Thu,False,7.64,7.64,04:49:56,17:10:58,191.0,4,4,162,162,
+2026-03-20,Fri,False,7.41,7.41,04:23:21,23:21:20,192.0,5,5,150,150,
+2026-03-22,Sun,True,0.21,0.21,15:49:37,23:21:42,13.0,2,2,4,4,non-business day under 15 min
+2026-03-23,Mon,False,5.59,5.59,04:45:34,19:48:09,137.0,6,6,147,147,
+2026-03-24,Tue,False,8.64,10.68,05:39:24,22:45:55,149.0,8,5,190,190,gantt hours differ; gantt session count differs
+2026-03-25,Wed,False,9.1,9.14,04:58:02,23:57:40,251.0,5,5,167,175,gantt events differ from heatmap
+2026-03-26,Thu,False,10.4,11.26,00:08:58,21:38:17,394.0,8,7,165,167,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-03-27,Fri,False,5.78,6.45,01:34:06,17:11:06,164.0,6,5,136,136,gantt hours differ; gantt session count differs
+2026-03-28,Sat,True,0.35,0.35,10:31:42,18:45:33,21.0,3,3,6,6,
+2026-03-29,Sun,True,0.02,0.03,09:42:13,09:43:43,2.0,1,1,2,2,non-business day under 15 min
+2026-03-30,Mon,False,7.26,7.26,00:15:16,17:25:47,125.0,5,5,144,144,
+2026-03-31,Tue,False,15.58,15.66,03:47:13,23:55:00,431.0,6,6,402,429,gantt hours differ; gantt events differ from heatmap
+2026-04-01,Wed,False,10.4,10.43,00:01:37,22:38:24,482.0,6,6,177,411,gantt events differ from heatmap
+2026-04-02,Thu,False,8.7,8.7,00:28:35,17:02:53,246.0,6,6,388,388,
+2026-04-03,Fri,True,0.0,0.0,11:26:58,22:23:38,0.0,4,4,4,4,non-business day under 15 min
+2026-04-04,Sat,True,1.07,1.08,02:01:10,21:06:14,64.0,5,5,19,19,
+2026-04-05,Sun,True,0.65,0.76,01:20:43,23:53:48,39.0,5,5,93,96,gantt hours differ; gantt events differ from heatmap
+2026-04-06,Mon,False,7.52,9.09,00:05:24,18:26:09,62.0,9,7,163,166,gantt hours differ; gantt session count differs; gantt events differ from heatmap
+2026-04-07,Tue,False,7.35,7.35,01:42:10,21:23:41,200.0,8,8,129,129,
+2026-04-08,Wed,False,5.78,5.78,05:13:56,23:38:14,117.0,9,9,146,146,
+2026-04-09,Thu,False,7.33,7.33,04:59:15,17:39:37,123.0,6,6,134,134,
+2026-04-10,Fri,False,4.64,4.64,03:00:08,16:24:36,97.0,5,5,95,95,
+2026-04-11,Sat,True,0.0,0.0,17:32:59,17:32:59,0.0,1,1,1,1,non-business day under 15 min
+2026-04-13,Mon,False,6.42,6.42,05:15:41,23:49:45,79.0,9,9,141,141,
+2026-04-14,Tue,False,5.54,6.23,00:48:59,16:17:11,127.0,6,5,113,113,gantt hours differ; gantt session count differs
+2026-04-15,Wed,False,7.08,8.46,01:18:16,20:14:55,170.0,9,7,158,158,gantt hours differ; gantt session count differs
+2026-04-16,Thu,False,10.07,10.07,01:51:28,17:30:19,369.0,3,3,123,123,
+2026-04-17,Fri,False,9.46,9.46,01:26:34,22:01:01,266.0,7,7,164,164,
+2026-04-18,Sat,True,1.37,2.07,10:25:03,13:29:28,82.0,3,2,17,17,gantt hours differ; gantt session count differs
+2026-04-19,Sun,True,0.62,0.62,14:26:26,15:03:44,37.0,1,1,7,7,
+2026-04-20,Mon,False,8.78,10.14,01:48:20,22:38:21,292.0,9,7,166,166,gantt hours differ; gantt session count differs
+2026-04-21,Tue,False,7.53,7.53,01:42:04,16:57:24,175.0,6,6,159,159,
+2026-04-22,Wed,False,11.28,11.28,01:18:49,21:41:55,210.0,7,7,198,198,
+2026-04-23,Thu,False,8.99,10.42,00:40:33,20:27:07,218.0,11,9,166,166,gantt hours differ; gantt session count differs
+2026-04-24,Fri,False,9.57,9.57,00:59:28,18:54:56,220.0,6,6,189,189,
+2026-04-25,Sat,True,0.0,0.0,21:58:09,21:58:09,0.0,1,1,1,1,non-business day under 15 min
+2026-04-26,Sun,True,0.94,0.94,13:32:03,23:26:30,56.0,5,5,16,16,
+2026-04-27,Mon,False,9.45,10.13,00:27:05,19:28:25,200.0,9,8,113,113,gantt hours differ; gantt session count differs
+2026-04-28,Tue,False,10.25,10.25,00:22:10,22:29:29,270.0,8,8,151,151,
+2026-04-29,Wed,False,5.17,6.57,00:46:56,21:24:38,167.0,9,7,108,108,gantt hours differ; gantt session count differs
+2026-04-30,Thu,False,6.43,7.14,03:00:08,21:42:33,141.0,7,6,204,204,gantt hours differ; gantt session count differs
+2026-05-01,Fri,False,11.02,11.01,00:16:48,17:40:50,207.0,5,5,251,251,
+2026-05-02,Sat,True,0.02,0.02,11:45:36,13:16:26,1.0,2,2,3,3,non-business day under 15 min
+2026-05-03,Sun,True,0.04,0.04,21:31:26,21:34:06,3.0,1,1,4,4,non-business day under 15 min
+2026-05-04,Mon,False,6.92,6.92,05:00:19,21:59:15,153.0,6,6,202,202,
+2026-05-05,Tue,False,5.6,6.34,04:47:12,17:30:17,37.0,6,5,179,179,gantt hours differ; gantt session count differs
+2026-05-06,Wed,False,6.43,6.43,04:45:59,23:22:15,195.0,8,8,196,196,
+2026-05-07,Thu,False,5.52,6.21,00:23:53,21:02:17,96.0,10,9,119,119,gantt hours differ; gantt session count differs
+2026-05-08,Fri,False,4.4,4.4,05:24:08,17:30:21,42.0,5,5,140,140,
+2026-05-10,Sun,True,0.0,0.0,21:26:50,21:26:52,0.0,1,1,2,2,non-business day under 15 min
+2026-05-11,Mon,False,6.14,6.14,05:07:19,19:17:51,64.0,5,5,173,173,
+2026-05-12,Tue,False,7.88,8.57,04:51:32,20:14:22,61.0,7,6,244,244,gantt hours differ; gantt session count differs
+2026-05-13,Wed,False,8.99,9.74,04:58:33,21:01:39,160.0,6,5,265,265,gantt hours differ; gantt session count differs
+2026-05-14,Thu,False,5.76,6.46,05:20:25,17:30:22,37.0,5,4,173,173,gantt hours differ; gantt session count differs
+2026-05-15,Fri,False,3.41,3.41,06:30:45,17:30:20,25.0,4,4,95,95,
+2026-05-16,Sat,True,0.0,0.0,11:50:48,17:49:25,0.0,2,2,2,2,non-business day under 15 min
+2026-05-17,Sun,True,2.03,2.03,12:08:29,21:46:15,122.0,5,5,69,69,
+2026-05-18,Mon,False,1.28,1.28,04:45:35,11:17:32,73.0,3,3,39,39,

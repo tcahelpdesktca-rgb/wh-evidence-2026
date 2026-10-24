@@ -20,8 +20,13 @@ const PAGE_PLOTLY_VERSION = HTML.match(/plotly-(\d+\.\d+\.\d+)\.min\.js/)[1];
 const K = DATA.kpi;
 const fmt = (n) => n.toLocaleString('en-US');
 
+// Optional knobs for running the same checks under different conditions:
+//   BROWSER_CHANNEL=chromium  -> full Chromium build instead of the headless shell
+//   BROWSER_TZ=Asia/Tokyo     -> browser timezone
+const launch = () => chromium.launch(process.env.BROWSER_CHANNEL ? { channel: process.env.BROWSER_CHANNEL } : {});
+
 const openPage = async (browser, path, viewport = { width: 1480, height: 1000 }) => {
-  const page = await browser.newPage({ viewport, locale: 'en-US' });
+  const page = await browser.newPage({ viewport, locale: 'en-US', timezoneId: process.env.BROWSER_TZ || undefined });
   const errors = [];
   page.on('pageerror', (e) => errors.push(e.message));
   page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
@@ -42,7 +47,7 @@ describe('rendered dashboard', () => {
   }, id);
 
   before(async () => {
-    browser = await chromium.launch();
+    browser = await launch();
     ({ page, errors } = await openPage(browser, DASHBOARD_PATH));
   });
   after(async () => browser && browser.close());
@@ -137,13 +142,23 @@ describe('rendered dashboard', () => {
 
 describe('other entry points and layouts', () => {
   let browser;
-  before(async () => { browser = await chromium.launch(); });
+  before(async () => { browser = await launch(); });
   after(async () => browser && browser.close());
 
   it('index.html forwards to the dashboard', async () => {
     const { page } = await openPage(browser, INDEX_PATH);
     await page.waitForURL(/dashboard\.html$/, { timeout: 5000 });
     assert.match(page.url(), /dashboard\.html$/);
+    await page.close();
+  });
+
+  it('prints to PDF with every chart present (exhibits get printed)', async () => {
+    const { page } = await openPage(browser, DASHBOARD_PATH);
+    await page.emulateMedia({ media: 'print' });
+    const pdf = await page.pdf({ format: 'Letter', printBackground: true });
+    const charts = await page.evaluate(() => document.querySelectorAll('.js-plotly-plot .main-svg').length);
+    assert.ok(pdf.length > 50_000, `PDF only ${pdf.length} bytes`);
+    assert.ok(charts >= 9, `${charts} chart SVGs in print layout`);
     await page.close();
   });
 

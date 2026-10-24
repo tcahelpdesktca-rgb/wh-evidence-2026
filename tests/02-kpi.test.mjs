@@ -119,8 +119,10 @@ describe('non-business days', () => {
 });
 
 describe('sessions', () => {
-  it('n_sessions = sum of per-day session counts', () => {
-    assert.equal(K.n_sessions, sum(rows.map((r) => r.nSessions)));
+  it('sum of per-day session counts = number of gantt rows (one row per session per day)', () => {
+    // n_sessions itself is lower than this sum whenever a session crosses midnight,
+    // because that one session is counted once on each day it touches.
+    assert.equal(sum(rows.map((r) => r.nSessions)), DATA.gantt.length);
   });
 
   it('n_sessions = number of gantt sessions after re-joining midnight splits', () => {

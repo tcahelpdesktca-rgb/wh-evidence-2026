@@ -6,8 +6,9 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 export const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
-export const DASHBOARD_PATH = join(REPO_ROOT, 'dashboard.html');
-export const INDEX_PATH = join(REPO_ROOT, 'index.html');
+// Set DASHBOARD=/path/to/other.html to run the whole suite against a different copy.
+export const DASHBOARD_PATH = process.env.DASHBOARD || join(REPO_ROOT, 'dashboard.html');
+export const INDEX_PATH = process.env.INDEX || join(REPO_ROOT, 'index.html');
 
 export const readHtml = (path = DASHBOARD_PATH) => readFileSync(path, 'utf8');
 

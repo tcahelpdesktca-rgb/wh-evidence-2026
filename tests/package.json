@@ -4,7 +4,10 @@
   "type": "module",
   "description": "Integrity tests for dashboard.html (the embedded DATA block and the rendered page).",
   "scripts": {
-    "test": "node --test --test-reporter=spec \"*.test.mjs\""
+    "test": "node --test --test-reporter=spec \"*.test.mjs\"",
+    "test:mutants": "node meta/mutate.mjs",
+    "test:control": "python3 -I meta/clean_control.py ../dashboard.html reports/clean_control.html && DASHBOARD=reports/clean_control.html node --test --test-reporter=spec \"*.test.mjs\"",
+    "cross-check": "python3 -I cross_check.py"
   },
   "devDependencies": {
     "plotly.js-dist-min": "2.27.0"
