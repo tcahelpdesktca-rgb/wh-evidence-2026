@@ -1,0 +1,12 @@
+{
+  "name": "wh-evidence-tests",
+  "private": true,
+  "type": "module",
+  "description": "Integrity tests for dashboard.html (the embedded DATA block and the rendered page).",
+  "scripts": {
+    "test": "node --test --test-reporter=spec \"*.test.mjs\""
+  },
+  "devDependencies": {
+    "plotly.js-dist-min": "2.27.0"
+  }
+}
